@@ -152,7 +152,7 @@
                     },
                     "elasticsearch": {
                         "plugins":{
-                            "elasticsearch-cloud-aws": { "version": "2.5.0" }
+                            "elasticsearch/elasticsearch-cloud-aws": { "version": "2.5.0" }
                         },
                         "version":"1.5.2",
                         "nginx": {

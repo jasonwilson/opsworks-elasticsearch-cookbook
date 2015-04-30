@@ -151,6 +151,9 @@
                         "jdk_version": "7"
                     },
                     "elasticsearch": {
+                        "plugins":{
+                            "elasticsearch-cloud-aws": { "version": "2.5.0" }
+                        },
                         "version":"1.5.2",
                         "nginx": {
                             "users": [
@@ -175,7 +178,7 @@
                         "discovery": {
                             "type": "ec2",
                             "zen": {
-                                "minimum_master_nodes": 2,
+                                "minimum_master_nodes": 1,
                                 "ping": {
                                     "multicast": {
                                         "enabled": false
@@ -195,7 +198,7 @@
                         },
                         "cloud": {
                             "aws": {
-                                "region": "us-east-1"
+                                "region": "us-west-2"
                             }
                         },
                         "custom_config": {
